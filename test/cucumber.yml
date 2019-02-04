@@ -1,0 +1,19 @@
+## YAML Templates
+---
+
+default: -p progress -p cenarioA -p chrome_headless -p homolog -p html
+
+pretty: --format pretty
+progress: --format progress
+
+cenarioA: -t @Pesquisa
+
+homolog: AMBIENTE=homolog
+producao: AMBIENTE=producao
+
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+firefox: BROWSER=firefox
+firefox_headless: BROWSER=firefox_headless
+
+html: --format html --out=results/report.html
